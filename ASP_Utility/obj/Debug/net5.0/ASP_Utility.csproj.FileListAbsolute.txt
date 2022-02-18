@@ -1,0 +1,12 @@
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Utility/obj/Debug/net5.0/ASP_Utility.csproj.AssemblyReference.cache
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Utility/obj/Debug/net5.0/ASP_Utility.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Utility/obj/Debug/net5.0/ASP_Utility.AssemblyInfoInputs.cache
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Utility/obj/Debug/net5.0/ASP_Utility.AssemblyInfo.cs
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Utility/obj/Debug/net5.0/ASP_Utility.csproj.CoreCompileInputs.cache
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Utility/bin/Debug/net5.0/ASP_Utility.deps.json
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Utility/bin/Debug/net5.0/ASP_Utility.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Utility/bin/Debug/net5.0/ref/ASP_Utility.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Utility/bin/Debug/net5.0/ASP_Utility.pdb
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Utility/obj/Debug/net5.0/ASP_Utility.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Utility/obj/Debug/net5.0/ref/ASP_Utility.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Utility/obj/Debug/net5.0/ASP_Utility.pdb

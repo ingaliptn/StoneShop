@@ -1,0 +1,12 @@
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Models/obj/Debug/net5.0/ASP_Models.csproj.AssemblyReference.cache
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Models/obj/Debug/net5.0/ASP_Models.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Models/obj/Debug/net5.0/ASP_Models.AssemblyInfoInputs.cache
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Models/obj/Debug/net5.0/ASP_Models.AssemblyInfo.cs
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Models/obj/Debug/net5.0/ASP_Models.csproj.CoreCompileInputs.cache
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Models/bin/Debug/net5.0/ASP_Models.deps.json
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Models/bin/Debug/net5.0/ASP_Models.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Models/bin/Debug/net5.0/ref/ASP_Models.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Models/bin/Debug/net5.0/ASP_Models.pdb
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Models/obj/Debug/net5.0/ASP_Models.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Models/obj/Debug/net5.0/ref/ASP_Models.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_Models/obj/Debug/net5.0/ASP_Models.pdb

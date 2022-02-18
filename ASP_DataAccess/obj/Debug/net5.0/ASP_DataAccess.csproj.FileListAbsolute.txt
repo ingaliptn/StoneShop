@@ -1,0 +1,17 @@
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/obj/Debug/net5.0/ASP_DataAccess.csproj.AssemblyReference.cache
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/obj/Debug/net5.0/ASP_DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/obj/Debug/net5.0/ASP_DataAccess.AssemblyInfoInputs.cache
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/obj/Debug/net5.0/ASP_DataAccess.AssemblyInfo.cs
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/obj/Debug/net5.0/ASP_DataAccess.csproj.CoreCompileInputs.cache
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/bin/Debug/net5.0/ASP_DataAccess.deps.json
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/bin/Debug/net5.0/ASP_DataAccess.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/bin/Debug/net5.0/ref/ASP_DataAccess.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/bin/Debug/net5.0/ASP_DataAccess.pdb
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/bin/Debug/net5.0/ASP_Models.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/bin/Debug/net5.0/ASP_Models.pdb
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/obj/Debug/net5.0/ASP_DataAccess.csproj.CopyComplete
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/obj/Debug/net5.0/ASP_DataAccess.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/obj/Debug/net5.0/ref/ASP_DataAccess.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/obj/Debug/net5.0/ASP_DataAccess.pdb
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/bin/Debug/net5.0/ASP_Utility.dll
+/Users/ingaliptn/Desktop/ASP_pract/ASP_DataAccess/bin/Debug/net5.0/ASP_Utility.pdb
