@@ -6,19 +6,23 @@
       <File FileName="ASP_pract/Views/Category/Delete.cshtml" />
       <File FileName="ASP_pract/Controllers/CategoryController.cs" />
       <File FileName="ASP_pract/Views/Home/Index.cshtml" />
-      <File FileName="ASP_pract/Views/Shared/_IndividualProductCard.cshtml" />
+      <File FileName="ASP_pract/Views/Shared/_IndividualProductCard.cshtml" Line="7" Column="1" />
       <File FileName="ASP_pract/Views/Inquiry/Index.cshtml" />
       <File FileName="ASP_pract/Views/Shared/_Notifications.cshtml" />
       <File FileName="ASP_pract/Views/Home/Details.cshtml" />
-      <File FileName="ASP_pract/Views/Cart/Index.cshtml" Line="85" Column="69" />
+      <File FileName="ASP_pract/Views/Cart/Index.cshtml" Line="63" Column="60" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="ASP_pract" expanded="True" selected="True">
+          <Node name="ASP_pract" expanded="True">
+            <Node name="ASP_Models" expanded="True" />
             <Node name="ASP_pract" expanded="True">
               <Node name="Views" expanded="True">
                 <Node name="Cart" expanded="True" />
+                <Node name="Shared" expanded="True">
+                  <Node name="_IndividualProductCard.cshtml" selected="True" />
+                </Node>
               </Node>
             </Node>
           </Node>
