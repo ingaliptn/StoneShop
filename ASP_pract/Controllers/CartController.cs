@@ -10,6 +10,8 @@ using ASP_DataAccess.Repository.IRepository;
 using ASP_Models;
 using ASP_Models.ViewModels;
 using ASP_Utility;
+using ASP_Utility.BrainTree;
+using Braintree;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -31,16 +33,18 @@ namespace ASP_pract.Controllers
         private readonly IInquiryDetailRepository _inqDRepo;
         private readonly IOrderHeaderRepository _orderHRepo;
         private readonly IOrderDetailRepository _orderDRepo;
+        private readonly IBrainTreeGate _brainTree;
 
         [BindProperty]
         public ProductUserVM ProductUserVM { get; set; }
         public CartController(IWebHostEnvironment webHostEnvironment, IEmailSender emailSender,
             IApplicationUserRepository userRepo, IProductRepository prodRepo,
             IInquiryHeaderRepository inqHRepo, IInquiryDetailRepository inqDRepo,
-            IOrderHeaderRepository orderHRepo, IOrderDetailRepository orderDRepo)
+            IOrderHeaderRepository orderHRepo, IOrderDetailRepository orderDRepo, IBrainTreeGate brainTree)
         {
             _webHostEnvironment = webHostEnvironment;
             _emailSender = emailSender;
+            _brainTree = brainTree;
             _userRepo = userRepo;
             _prodRepo = prodRepo;
             _inqDRepo = inqDRepo;
@@ -111,7 +115,9 @@ namespace ASP_pract.Controllers
                     applicationUser = new ApplicationUser();
                 }
 
-
+                var gateway = _brainTree.GetGateway();
+                var clientToken = gateway.ClientToken.Generate();
+                ViewBag.ClientToken = clientToken;
             }
             else
             {
@@ -164,10 +170,12 @@ namespace ASP_pract.Controllers
             {
                 //we need to create an order
                 //var orderTotal = 0.0;
-                //foreach(Product prod in ProductUserVM.ProductList)
+
+                //foreach (var item in ProductUserVM.ProductList)
                 //{
-                //    orderTotal += prod.Price * prod.TempSqFt;
+                //    orderTotal += item.Price * item.TempSqm;
                 //}
+
                 OrderHeader orderHeader = new OrderHeader()
                 {
                     CreatedByUserId = claim.Value,
@@ -180,7 +188,9 @@ namespace ASP_pract.Controllers
                     Email = ProductUserVM.ApplicationUser.Email,
                     PhoneNumber = ProductUserVM.ApplicationUser.PhoneNumber,
                     OrderDate = DateTime.Now,
+                    OrderStatus = WC.StatusPending
                 };
+
                 _orderHRepo.Add(orderHeader);
                 _orderHRepo.Save();
 
@@ -198,10 +208,35 @@ namespace ASP_pract.Controllers
                 }
                 _orderDRepo.Save();
 
+                string nonceFromTheClient = collection["payment_method_nonce"];
+
+                var request = new TransactionRequest
+                {
+                    Amount = Convert.ToDecimal(orderHeader.FinalOrderTotal),
+                    PaymentMethodNonce = nonceFromTheClient,
+                    OrderId = orderHeader.Id.ToString(),
+                    Options = new TransactionOptionsRequest
+                    {
+                        SubmitForSettlement = true
+                    }
+                };
+
+                var gateway = _brainTree.GetGateway();
+                Result<Transaction> result = gateway.Transaction.Sale(request);
+
+                if (result.Target.ProcessorResponseText == "Approved")
+                {
+                    orderHeader.TransactionId = result.Target.Id;
+                    orderHeader.OrderStatus = WC.StatusApproved;
+                }
+                else
+                {
+                    orderHeader.OrderStatus = WC.StatusCancelled;
+                }
+
+                _orderHRepo.Save();
 
                 return RedirectToAction(nameof(InquiryConfirmation), new { id = orderHeader.Id });
-
-
             }
             else
             {
@@ -268,6 +303,7 @@ namespace ASP_pract.Controllers
 
             return RedirectToAction(nameof(InquiryConfirmation));
         }
+
         public IActionResult InquiryConfirmation(int id = 0)
         {
             OrderHeader orderHeader = _orderHRepo.FirstOrDefault(u => u.Id == id);
@@ -304,7 +340,6 @@ namespace ASP_pract.Controllers
             HttpContext.Session.Set(WC.SessionCart, shoppingCartList);
             return RedirectToAction(nameof(Index));
         }
-
 
         public IActionResult Clear()
         {

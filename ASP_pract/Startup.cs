@@ -6,6 +6,7 @@ using ASP_DataAccess.Data;
 using ASP_DataAccess.Repository;
 using ASP_DataAccess.Repository.IRepository;
 using ASP_Utility;
+using ASP_Utility.BrainTree;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -53,15 +54,21 @@ namespace ASP_pract
                 options.Cookie.IsEssential = true;
             });
 
+            services.Configure<BrainTreeSettings>(Configuration.GetSection("BrainTree"));
+            services.AddSingleton<IBrainTreeGate, BrainTreeGate>();
+
             services.AddScoped<ICategoryRepository, CategoryRepository>();
-            services.AddScoped<IApplicationTypeRepository, ApplicationTypeRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
+
+            services.AddScoped<IApplicationTypeRepository, ApplicationTypeRepository>();
+            services.AddScoped<IApplicationUserRepository, ApplicationUserRepository>();
+
             services.AddScoped<IInquiryHeaderRepository, InquiryHeaderRepository>();
             services.AddScoped<IInquiryDetailRepository, InquiryDetailRepository>();
 
             services.AddScoped<IOrderHeaderRepository, OrderHeaderRepository>();
             services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
-            services.AddScoped<IApplicationUserRepository, ApplicationUserRepository>();
+
 
             services.AddControllersWithViews();
         }

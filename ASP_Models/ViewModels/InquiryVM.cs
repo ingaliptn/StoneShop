@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using ASP_DataAccess.Data;
 
 namespace ASP_Models.ViewModels
 {

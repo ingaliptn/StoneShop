@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "AMzejXFZotOPGOnJI8LXIH2jtFncLfGxRmbJAWVTfdn+4TN3ZkmxhHDOdm/ineWTgchekFRrtFbltuZtGGna3A==",
+  "dgSpecHash": "vUBNjP0rXiq/2jq3d2iYFhtwcI2TPbW86aQt6Rzy8/JRyPAZ8xNRWmHntYFbduEQtllftVd8U/iqy/D3SIIoAQ==",
   "success": true,
   "projectFilePath": "/Users/ingaliptn/Desktop/ASP_pract/ASP_pract/ASP_pract.csproj",
   "expectedPackageFiles": [
+    "/Users/ingaliptn/.nuget/packages/braintree/5.10.0/braintree.5.10.0.nupkg.sha512",
     "/Users/ingaliptn/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",
     "/Users/ingaliptn/.nuget/packages/mailjet.api/1.2.2/mailjet.api.1.2.2.nupkg.sha512",
     "/Users/ingaliptn/.nuget/packages/microsoft.aspnetcore.antiforgery/2.2.0/microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
@@ -205,7 +206,9 @@
     "/Users/ingaliptn/.nuget/packages/system.xml.readerwriter/4.3.0/system.xml.readerwriter.4.3.0.nupkg.sha512",
     "/Users/ingaliptn/.nuget/packages/system.xml.xdocument/4.3.0/system.xml.xdocument.4.3.0.nupkg.sha512",
     "/Users/ingaliptn/.nuget/packages/system.xml.xmldocument/4.3.0/system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "/Users/ingaliptn/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "/Users/ingaliptn/.nuget/packages/system.xml.xmlserializer/4.3.0/system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "/Users/ingaliptn/.nuget/packages/system.xml.xpath/4.3.0/system.xml.xpath.4.3.0.nupkg.sha512",
+    "/Users/ingaliptn/.nuget/packages/system.xml.xpath.xmldocument/4.3.0/system.xml.xpath.xmldocument.4.3.0.nupkg.sha512"
   ],
   "logs": []
 }

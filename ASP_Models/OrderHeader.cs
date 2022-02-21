@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using ASP_Models;
 
-namespace ASP_DataAccess.Data
+
+namespace ASP_Models
 {
     public class OrderHeader
     {
