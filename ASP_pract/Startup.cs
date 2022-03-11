@@ -69,6 +69,11 @@ namespace ASP_pract
             services.AddScoped<IOrderHeaderRepository, OrderHeaderRepository>();
             services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
 
+            services.AddAuthentication().AddFacebook(Options =>
+            {
+                Options.AppId = "485389836362389";
+                Options.AppSecret = "ac02ce19b728b6f75554ec5a4699dd2b";
+            });
 
             services.AddControllersWithViews();
         }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "vUBNjP0rXiq/2jq3d2iYFhtwcI2TPbW86aQt6Rzy8/JRyPAZ8xNRWmHntYFbduEQtllftVd8U/iqy/D3SIIoAQ==",
+  "dgSpecHash": "f4Jzf2Uwi9GqExjtU0ogAOJX9/9nBqubOaZk8gPAzGCx3wRhkQj5c34B9X7MbmtHBlo9MRxL9NTY1Cm9199/dw==",
   "success": true,
   "projectFilePath": "/Users/ingaliptn/Desktop/ASP_pract/ASP_pract/ASP_pract.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "/Users/ingaliptn/.nuget/packages/microsoft.aspnetcore.antiforgery/2.2.0/microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "/Users/ingaliptn/.nuget/packages/microsoft.aspnetcore.authentication.abstractions/2.2.0/microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "/Users/ingaliptn/.nuget/packages/microsoft.aspnetcore.authentication.core/2.2.0/microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",
+    "/Users/ingaliptn/.nuget/packages/microsoft.aspnetcore.authentication.facebook/5.0.0/microsoft.aspnetcore.authentication.facebook.5.0.0.nupkg.sha512",
     "/Users/ingaliptn/.nuget/packages/microsoft.aspnetcore.authorization/2.2.0/microsoft.aspnetcore.authorization.2.2.0.nupkg.sha512",
     "/Users/ingaliptn/.nuget/packages/microsoft.aspnetcore.authorization.policy/2.2.0/microsoft.aspnetcore.authorization.policy.2.2.0.nupkg.sha512",
     "/Users/ingaliptn/.nuget/packages/microsoft.aspnetcore.cryptography.internal/5.0.12/microsoft.aspnetcore.cryptography.internal.5.0.12.nupkg.sha512",

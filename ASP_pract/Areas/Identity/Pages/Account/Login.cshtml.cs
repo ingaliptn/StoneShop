@@ -21,7 +21,7 @@ namespace ASP_pract.Areas.Identity.Pages.Account
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
 
-        public LoginModel(SignInManager<IdentityUser> signInManager, 
+        public LoginModel(SignInManager<IdentityUser> signInManager,
             ILogger<LoginModel> logger,
             UserManager<IdentityUser> userManager)
         {
@@ -76,7 +76,7 @@ namespace ASP_pract.Areas.Identity.Pages.Account
             returnUrl ??= Url.Content("~/");
 
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
-        
+
             if (ModelState.IsValid)
             {
                 // This doesn't count login failures towards account lockout
@@ -98,10 +98,13 @@ namespace ASP_pract.Areas.Identity.Pages.Account
                 }
                 else
                 {
+                    ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+
                     ModelState.AddModelError(string.Empty, "Invalid login attempt.");
                     return Page();
                 }
             }
+            ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
 
             // If we got this far, something failed, redisplay form
             return Page();
