@@ -2,38 +2,30 @@
   <MonoDevelop.Ide.ItemProperties.ASP__pract PreferredExecutionTarget="/Applications/Opera.app" />
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="ASP_pract/Areas/Identity/Pages/Account/Login.cshtml" Line="33" Column="2" />
-      <File FileName="ASP_pract/Areas/Identity/Pages/Account/Login.cshtml.cs" Line="108" Column="1" />
-      <File FileName="ASP_pract/Areas/Identity/Pages/Account/Register.cshtml" Line="51" Column="105" />
+      <File FileName="ASP_pract/Controllers/OrderController.cs" Line="41" Column="1" />
+      <File FileName="ASP_Models/ViewModels/OrderListVM.cs" />
+      <File FileName="ASP_Utility/WC.cs" />
+      <File FileName="ASP_pract/Views/Shared/_Layout.cshtml" />
+      <File FileName="ASP_pract/Views/_ViewStart.cshtml" />
+      <File FileName="ASP_pract/Views/Order/Index.cshtml" Line="36" Column="13" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ASP_pract" expanded="True">
+            <Node name="ASP_Models" expanded="True">
+              <Node name="ViewModels" expanded="True" />
+            </Node>
             <Node name="ASP_pract" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-              <Node name="Areas" expanded="True">
-                <Node name="Identity" expanded="True">
-                  <Node name="Pages" expanded="True">
-                    <Node name="Account" expanded="True">
-                      <Node name="ExternalLogin.cshtml" expanded="True" />
-                      <Node name="Login.cshtml" expanded="True" />
-                      <Node name="Register.cshtml" selected="True" />
-                    </Node>
-                  </Node>
-                </Node>
-              </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Cart" expanded="True" />
-                <Node name="Home" expanded="True" />
+                <Node name="Order" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
                 <Node name="Shared" expanded="True" />
               </Node>
-              <Node name="appsettings.json" expanded="True" />
             </Node>
-            <Node name="ASP_Utility" expanded="True">
-              <Node name="Dependencies" expanded="True" />
-            </Node>
+            <Node name="ASP_Utility" expanded="True" />
           </Node>
         </State>
       </Pad>

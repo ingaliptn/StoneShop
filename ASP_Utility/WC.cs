@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+
 namespace ASP_Utility
 {
     public static class WC
@@ -30,5 +33,15 @@ namespace ASP_Utility
         public const string StatusCancelled = "Cancelled";
         public const string StatusRefunded = "Refunded";
 
+        public static readonly IEnumerable<string> ListStatus = new ReadOnlyCollection<string>(
+            new List<string>
+            {
+                StatusApproved,
+                StatusCancelled,
+                StatusInProcess,
+                StatusPending,
+                StatusRefunded,
+                StatusShipped
+            });
     }
 }

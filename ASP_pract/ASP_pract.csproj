@@ -18,6 +18,8 @@
     <None Remove="Views\Inquiry\" />
     <None Remove="Controllers\" />
     <None Remove="Microsoft.AspNetCore.Authentication.Facebook" />
+    <None Remove="Views\Order\" />
+    <None Remove="Syncfusion.EJ2.AspNet.Core" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.12">
@@ -31,6 +33,7 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
     <PackageReference Include="Mailjet.Api" Version="1.2.2" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Facebook" Version="5.0.0" />
+    <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="19.4.0.56" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Category\" />
@@ -42,6 +45,7 @@
     <Folder Include="wwwroot\templates\" />
     <Folder Include="Views\Inquiry\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Views\Order\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\images\" />
