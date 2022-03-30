@@ -1358,3 +1358,4 @@ C:/Users/nikit/Desktop/ASP_pract/ASP_pract/bin/Debug/net5.0/System.Diagnostics.D
 /Users/ingaliptn/Desktop/ASP_pract/ASP_pract/bin/Debug/net5.0/Syncfusion.EJ2.dll
 /Users/ingaliptn/Desktop/ASP_pract/ASP_pract/bin/Debug/net5.0/Syncfusion.Licensing.dll
 /Users/ingaliptn/Desktop/ASP_pract/ASP_pract/obj/Debug/net5.0/Razor/Views/Order/Index.cshtml.g.cs
+/Users/ingaliptn/Desktop/ASP_pract/ASP_pract/obj/Debug/net5.0/Razor/Views/Order/Details.cshtml.g.cs

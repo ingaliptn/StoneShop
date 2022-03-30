@@ -75,7 +75,8 @@ namespace ASP_pract.Areas.Identity.Pages.Account
         {
 
             //Запись ролей в базу данных 
-            if (!await _roleManager.RoleExistsAsync(WC.AdminRole)){
+            if (!await _roleManager.RoleExistsAsync(WC.AdminRole))
+            {
                 await _roleManager.CreateAsync(new IdentityRole(WC.AdminRole));
                 await _roleManager.CreateAsync(new IdentityRole(WC.CustomerRole));
 
@@ -132,15 +133,18 @@ namespace ASP_pract.Areas.Identity.Pages.Account
                     else
                     {
                         //registration
-                        if (!User.IsInRole(WC.AdminRole))
+                        if (User.IsInRole(WC.AdminRole))
                         {
-                            await _signInManager.SignInAsync(user, isPersistent: false);
+                            TempData[WC.Success] = user.FullName + " successfully registered";
+                            return RedirectToAction("Index", "Home");
+
                         }
                         else
                         {
-                            return RedirectToAction("Index");
+                            await _signInManager.SignInAsync(user, isPersistent: false);
+                            return LocalRedirect(returnUrl);
+
                         }
-                        return LocalRedirect(returnUrl);
                     }
                 }
                 foreach (var error in result.Errors)

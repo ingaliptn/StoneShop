@@ -35,7 +35,7 @@ namespace ASP_Models
 
 
         [NotMapped]
-        [Range(1, 10000)]
+        [Range(1, 10000, ErrorMessage = "SqM must be greater then 0!")]
         public int TempSqm { get; set; }
 
     }
