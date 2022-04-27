@@ -74,13 +74,7 @@ namespace ASP_pract.Areas.Identity.Pages.Account
         public async Task OnGetAsync(string returnUrl = null)
         {
 
-            //Запись ролей в базу данных 
-            if (!await _roleManager.RoleExistsAsync(WC.AdminRole))
-            {
-                await _roleManager.CreateAsync(new IdentityRole(WC.AdminRole));
-                await _roleManager.CreateAsync(new IdentityRole(WC.CustomerRole));
 
-            }
 
             ReturnUrl = returnUrl;
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using ASP_DataAccess.Data;
+using ASP_DataAccess.Initializer;
 using ASP_DataAccess.Repository;
 using ASP_DataAccess.Repository.IRepository;
 using ASP_Utility;
@@ -69,6 +70,8 @@ namespace ASP_pract
             services.AddScoped<IOrderHeaderRepository, OrderHeaderRepository>();
             services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
 
+            services.AddScoped<IDbInitializer, DbInitializer>();
+
             services.AddAuthentication().AddFacebook(Options =>
             {
                 Options.AppId = "485389836362389";
@@ -79,7 +82,7 @@ namespace ASP_pract
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IDbInitializer dbInitializer)
         {
             if (env.IsDevelopment())
             {
@@ -99,6 +102,8 @@ namespace ASP_pract
             app.UseAuthentication();
 
             app.UseAuthorization();
+
+            dbInitializer.Initialize();
 
             app.UseSession();
 
