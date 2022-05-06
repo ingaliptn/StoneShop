@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASP_DataAccess.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20220211214509_OrderHeaderAndDetail")]
-    partial class OrderHeaderAndDetail
+    [Migration("20220427192340_testmigration2")]
+    partial class testmigration2
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -146,11 +146,9 @@ namespace ASP_DataAccess.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Address")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("City")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CreatedByUserId")
@@ -167,7 +165,6 @@ namespace ASP_DataAccess.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NP")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("OrderDate")
@@ -183,14 +180,12 @@ namespace ASP_DataAccess.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("PhoneNumber")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<DateTime>("ShippingDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("State")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("TransactionId")

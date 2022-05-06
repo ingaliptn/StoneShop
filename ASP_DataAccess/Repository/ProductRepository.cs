@@ -13,14 +13,14 @@ namespace ASP_DataAccess.Repository
     {
         public readonly AppDbContext _db;
 
-        public ProductRepository(AppDbContext db):base(db)
+        public ProductRepository(AppDbContext db) : base(db)
         {
             _db = db;
         }
 
         public IEnumerable<SelectListItem> GetAllDropdownList(string obj)
         {
-            if(obj == WC.CategoryName)
+            if (obj == WC.CategoryName)
             {
                 return _db.Category.Select(i => new SelectListItem
                 {
@@ -28,7 +28,7 @@ namespace ASP_DataAccess.Repository
                     Value = i.Id.ToString()
                 });
             }
-            if(obj == WC.ApplicationTypeName)
+            if (obj == WC.ApplicationTypeName)
             {
                 return _db.ApplicationType.Select(u => new SelectListItem
                 {

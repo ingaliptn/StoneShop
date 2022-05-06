@@ -2,7 +2,7 @@
 
 namespace ASP_DataAccess.Migrations
 {
-    public partial class testnewlibraries : Migration
+    public partial class testmigration : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {

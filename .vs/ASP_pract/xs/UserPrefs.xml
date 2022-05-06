@@ -2,24 +2,25 @@
   <MonoDevelop.Ide.ItemProperties.ASP__pract PreferredExecutionTarget="/Applications/Opera.app" />
   <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="ASP_pract/appsettings.json" Line="4" Column="68" />
       <File FileName="ASP_DataAccess/Initializer/DbInitializer.cs" Line="39" Column="1" />
-      <File FileName="ASP_pract/appsettings.Development.json" Line="5" Column="68" />
-      <File FileName="ASP_pract/Startup.cs" Line="1" Column="1" />
-      <File FileName="ASP_DataAccess/Migrations/20220209130723_NewDataBase.Designer.cs" Line="121" Column="32" />
-      <File FileName="ASP_pract/Program.cs" Line="16" Column="1" />
+      <File FileName="ASP_Models/ApplicationUser.cs" />
+      <File FileName="ASP_pract/Startup.cs" />
+      <File FileName="ASP_DataAccess/Initializer/IDbInitializer.cs" />
+      <File FileName="ASP_pract/appsettings.json" Line="14" Column="15" />
+      <File FileName="ASP_pract/appsettings.Development.json" Line="3" Column="5" />
+      <File FileName="ASP_pract/Program.cs" />
+      <File FileName="ASP_DataAccess/Data/AppDbContext.cs" />
+      <File FileName="ASP_DataAccess/Repository/ProductRepository.cs" />
+      <File FileName="ASP_DataAccess/Migrations/20220506095307_aaabbb.cs" />
+      <File FileName="ASP_DataAccess/Repository/Repository.cs" />
+      <File FileName="ASP_pract/Controllers/HomeController.cs" />
+      <File FileName="ASP_DataAccess/Migrations/20220506095504_aaabbbccc.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ASP_pract" expanded="True">
-            <Node name="ASP_DataAccess" expanded="True">
-              <Node name="Initializer" expanded="True" />
-            </Node>
-            <Node name="ASP_pract" expanded="True">
-              <Node name="appsettings.json" expanded="True" />
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="ASP_pract" selected="True" />
           </Node>
         </State>
       </Pad>
